@@ -17,5 +17,5 @@ const User = () => {
     </View>
   )
 }
-
+ 
 export default User
