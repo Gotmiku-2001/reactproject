@@ -1,6 +1,9 @@
 
 import { StyleSheet, Text, View ,Button} from 'react-native'
 import React from 'react'
+// import LotsOfGreetings from './components/LotsOfGreetings'
+import MyCustomTextwith from './components/MyCustomTextwith'
+
 
 export default function App() {
   const showData = () => {
@@ -8,13 +11,16 @@ export default function App() {
    }
   return (
     <View style={styles.container}>
-      <Text>Button Example</Text>
+      {/* <Text>Button Example</Text>
       <Button 
       color='purple'
       onPress={showData}
       title='click me'
-      />
-    </View>
+      /> */}
+      {/* <LotsOfGreetings/> */}
+      <MyCustomTextwith/>
+    </View> 
+
   )
 }
 
