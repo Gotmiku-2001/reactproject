@@ -3,6 +3,9 @@ import { StyleSheet, Text, View ,Button} from 'react-native'
 import React from 'react'
 // import LotsOfGreetings from './components/LotsOfGreetings'
 import MyCustomTextwith from './components/MyCustomTextwith'
+import Count from './components/Count'
+import InputText from './components/InputText'
+import UsernamePassword from './components/UserNameandPassword'
 
 
 export default function App() {
@@ -18,11 +21,16 @@ export default function App() {
       title='click me'
       /> */}
       {/* <LotsOfGreetings/> */}
-      <MyCustomTextwith/>
+      {/* <MyCustomTextwith/> */}
+      {/* <Count/> */}
+      {/* <InputText/> */}
+      <UsernamePassword/>
     </View> 
 
   )
 }
+
+
 
 const styles = StyleSheet.create({
   container:{
