@@ -29,17 +29,18 @@ const UsernamePassword = () => {
       <TextInput
       value={Name}
       onChangeText = {(Name)=>{setName(Name)}}
-      style={styles.TextInput}
+      style={styles.TextInputStyle}
       placeholder='Name'
       />
       <TextInput
       value={Email}
       onChangeText = {(Email)=>{setEmail(Email)}}
-      style={styles.TextInput}
+      style={styles.TextInputStyle}
       placeholder='Email'
       />
-
-      <Button onPress={checkTexInput} title = 'Submit' />
+    <View style={{marginTop: 15}}>
+       <Button onPress={checkTexInput} title = 'Submit' />
+    </View>
     </View>
   )
 }
