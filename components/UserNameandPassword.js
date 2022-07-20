@@ -4,25 +4,42 @@ import { Button } from 'react-native-web';
 
 const UsernamePassword = () => {
   const [Email,setEmail]=useState('');
-  const [Password,setPassword]=useState('');
-  const showData = () => {
+  const [Name,setName]=useState('');
+  /* const showData = () => {
     alert('Email: '+Email+"\n"+'Password: '+Password)
-   };
+   }; */
+   const checkTexInput = () => {
+    //Check for the Name TextInput
+    if (!Name.trim()) {
+      alert('Please Enter Name');
+      return;
+    }
+    if (!Email.trim()) {
+      alert('Please Enter Email');
+      return;
+    }
+    alert('Success')
+    //Check for the Email TextInput
+    //Checked Successfully
+    //Do whatever you want
+    
+  }
   return (
     <View style={{flex:1,marginTop:20,alignItems:'center'}}>
+      <TextInput
+      value={Name}
+      onChangeText = {(Name)=>{setName(Name)}}
+      style={styles.TextInput}
+      placeholder='Name'
+      />
       <TextInput
       value={Email}
       onChangeText = {(Email)=>{setEmail(Email)}}
       style={styles.TextInput}
       placeholder='Email'
       />
-      <TextInput
-      value={Password}
-      onChangeText = {(Password)=>{setPassword(Password)}}
-      style={styles.TextInput}
-      placeholder='Password'
-      />
-      <Button onPress={showData} title = 'Submit' />
+
+      <Button onPress={checkTexInput} title = 'Submit' />
     </View>
   )
 }
@@ -30,14 +47,17 @@ const UsernamePassword = () => {
 export default UsernamePassword
 
 const styles = StyleSheet.create({
-  TextInput :{
-      width:250,
-      height:45,
-      padding:10,
-      marginTop:20,
-      marginBottom:10,
-      backgroundColor:'#bcc9e1'
-
-
+  container:{
+    flex: 1,
+    padding:35,
+  },
+  
+  TextInputStyle :{
+      width:'100%',
+      height:40,
+      paddingHorizontal:5,
+      borderWidth: 0.5,
+      marginTop:15,
   }
 })
+
