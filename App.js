@@ -6,6 +6,9 @@ import MyCustomTextwith from './components/MyCustomTextwith'
 import Count from './components/Count'
 import InputText from './components/InputText'
 import UsernamePassword from './components/UserNameandPassword'
+import AlertComponent from './components/AlertComponent'
+import ImageWithTextInput from './components/ImageWithTextInput'
+import Touchable_Example from './components/Touchable_Example'
 
 
 export default function App() {
@@ -24,7 +27,11 @@ export default function App() {
       {/* <MyCustomTextwith/> */}
       {/* <Count/> */}
       {/* <InputText/> */}
-      <UsernamePassword/>
+     {/*  <UsernamePassword/> */}
+    {/* <AlertComponent/> */}
+     {/* <ImageWithTextInput/> */}
+    {/*  <ButtonExample/> */}
+    <Touchable_Example/>
     </View> 
 
   )
