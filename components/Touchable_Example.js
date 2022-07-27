@@ -6,7 +6,7 @@ const Touchable_Example = () => {
         alert('Alert for: '+msg);
     };
   return (
-    <SafeAreaView style={{flex:1}}>
+  <SafeAreaView style={{flex:1}}>
         <View style={styles.container}>
             <TouchableNativeFeedback
                 onPress={()=>onPress('TouchableNativeFreedback Pressed') }

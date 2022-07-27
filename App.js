@@ -9,6 +9,7 @@ import UsernamePassword from './components/UserNameandPassword'
 import AlertComponent from './components/AlertComponent'
 import ImageWithTextInput from './components/ImageWithTextInput'
 import Touchable_Example from './components/Touchable_Example'
+import TouchablePractice from './components/TouchablePractice'
 
 
 export default function App() {
@@ -31,7 +32,8 @@ export default function App() {
     {/* <AlertComponent/> */}
      {/* <ImageWithTextInput/> */}
     {/*  <ButtonExample/> */}
-    <Touchable_Example/>
+    {/* <Touchable_Example/> */}
+    <TouchablePractice/>
     </View> 
 
   )
