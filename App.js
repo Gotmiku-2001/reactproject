@@ -2,16 +2,16 @@
 import { StyleSheet, Text, View ,Button} from 'react-native'
 import React from 'react'
 // import LotsOfGreetings from './components/LotsOfGreetings'
-import MyCustomTextwith from './components/MyCustomTextwith'
+//  import MyCustomTextwith from './components/MyCustomTextwith'
 import Count from './components/Count'
-import InputText from './components/InputText'
+/* import InputText from './components/InputText'
 import UsernamePassword from './components/UserNameandPassword'
 import AlertComponent from './components/AlertComponent'
 import ImageWithTextInput from './components/ImageWithTextInput'
 import Touchable_Example from './components/Touchable_Example'
 import TouchablePractice from './components/TouchablePractice'
-import DynamicStyle from './components/DynamicStyle'
-import ModelExample from './components/ModelExample'
+import DynamicStyle from './components/DynamicStyle' 
+import ModelExample from './components/ModelExample' */
 
 
 export default function App() {
@@ -21,14 +21,15 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* <Text>Button Example</Text>
-      <Button 
+
+<Button 
       color='purple'
       onPress={showData}
       title='click me'
       /> */}
       {/* <LotsOfGreetings/> */}
       {/* <MyCustomTextwith/> */}
-      {/* <Count/> */}
+       <Count/>
       {/* <InputText/> */}
      {/*  <UsernamePassword/> */}
     {/* <AlertComponent/> */}
@@ -37,7 +38,7 @@ export default function App() {
     {/* <Touchable_Example/> */}
     {/* <TouchablePractice/> */}
     {/* <DynamicStyle/> */}
-    <ModelExample/>
+   {/*  <ModelExample/> */}
     </View> 
 
   )
